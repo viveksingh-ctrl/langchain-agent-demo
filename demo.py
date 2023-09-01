@@ -16,15 +16,15 @@ import configs
 os.environ['OPENAI_API_KEY'] = configs.OPEN_API_KEY
 
 
-template = '''
-Identify and fill the following key-value pairs given below from the statement 
-{crud}
-'''
+# template = '''
+# Identify and fill the following key-value pairs given below from the statement 
+# {crud}
+# '''
 
-prompt = PromptTemplate(
-    input_variables=["crud"],
-    template=template,
-)
+# prompt = PromptTemplate(
+#     input_variables=["crud"],
+#     template=template,
+# )
 llm = ChatOpenAI(temperature=0) 
 
 
